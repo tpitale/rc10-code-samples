@@ -1,0 +1,1 @@
+Garb::Session.login('username', 'password')
