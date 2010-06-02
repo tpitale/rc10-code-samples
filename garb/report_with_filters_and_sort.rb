@@ -1,7 +1,7 @@
 class Exits
   extend Garb::Resource
 
-  metrics :exits
+  metrics :exits, :pageviews
   dimensions :page_path
   sort :exits
 
