@@ -1,13 +1,14 @@
-class Exits
+class Landings
   extend Garb::Resource
 
-  metrics :exits, :pageviews
-  dimensions :page_path
-  sort :exits
+  metrics :entrances
+  dimensions :landing_page_path
 
-  filters :page_path.contains => 'season'
+  sort :entrances
+
+  filters :landing_page_path.contains => 'blog'
   # OR
   filters do
-    contains(:page_path, 'season')
+    contains(:landing_page_path, 'blog')
   end
 end
