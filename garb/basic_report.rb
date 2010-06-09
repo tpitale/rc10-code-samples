@@ -1,6 +1,10 @@
-class Exits
+class Landings
   extend Garb::Resource
 
-  metrics :exits, :visits
-  dimensions :page_path
+  metrics :entrances
+  dimensions :landing_page_path
+
+  sort :entrances
 end
+
+results = Landings.results(profile)

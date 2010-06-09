@@ -1,3 +1,4 @@
+
 results = Exits.results(profile)
 
 results.each do |result|
