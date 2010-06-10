@@ -1,3 +1,10 @@
+class PageviewExitsAndTime
+  extend Garb::Resource
+
+  metrics :pageviews, :exits, :time_on_page
+  dimensions :page_path
+end
+
 results = PageviewExitsAndTime.results(profile)
 
 results.each do |result|
